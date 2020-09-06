@@ -61,7 +61,7 @@ class BlogController extends AbstractController
 
 
     /**
-    * @Route("/blog/create", name="blog_create")
+    * @Route("/", name="blog_create")
     */
     public function create()
     {
