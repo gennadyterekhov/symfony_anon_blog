@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Post{% endblock %}
+
+
+{% block body %}
+
+<h1 style="text-align:center;" >{{ post.title }}</h1>
+by {{ post.author }}
+{# [{{ post.date }}] #}
+<br>
+<hr>
+<br>
+<div style="text-align:center;">
+
+{{ post.text }}
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,20 @@
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Sign In{% endblock %}
+
+
+{% block body %}
+
+
+<h1>Post list</h1>
+<div>
+    {% for p in list %}
+        {# {{ p.date }} #}
+        {{ p.author }} <a href="/blog/post/{{ p.id }}"> {{ p.title }} </a> <br>
+    {% endfor %}
+</div>
+
+
+{% endblock %}
+

@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Post{% endblock %}
+
+
+{% block body %}
+
+<h1 style="text-align:center;" >Post</h1>
+
+<br>
+<hr>
+<br>
+
+<div style="text-align:center;">
+
+<form class="form" action="/blog/create/submit" method="POST">
+
+    <div class="form-group">
+        <input class="form-control" type="text" name="title" placeholder="title">
+    </div>
+
+    <div class="form-group">
+        <input class="form-control" type="text" name="author" placeholder="author">
+    </div>    
+
+    <div class="form-group">
+        <textarea class="form-control" type="textarea" rows="4" name="text">
+your text
+        </textarea>
+    </div>
+
+    <input class="btn btn-primary" type="submit" value="Publish">
+</form>
+</div>
+
+
+
+{% endblock %}
